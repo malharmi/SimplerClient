@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SimplerClient</title>
+    </head>
+    <body>
+        <form>
+            <div class="whereToSend">
+                <label for="url">Request URL: </label>
+                <input type="text" name="url" id="url" />
+            </div>
+            <div class="whatToRequest">
+                <label for="requestType">Request Type (GET or POST): </label>
+                <select name="requestType" id="requestType">
+                    <option value="post">POST</option>
+                    <option value="get">GET</option>
+                </select>
+            </div>
+            <div class="whatsMyType">
+                <label for="bodyType">Body Type: </label>
+                <select name="bodyType" id="bodyType">
+                    <option value="JSON">JSON</option>
+                    <option value="QUERY">Query</option>
+                    <option value="FORM">Form</option>
+                </select>
+            </div>
+            <div class="whatToSend">
+                <label for="body">Body: </label>
+                <input type="text" name="body" id="body" />
+            </div>
+            <div class="submitBtn">
+                <input type="button" value="subBtn" id="subBtn" />
+            </div>
+        </form>
+        <div class="MyResponse">
+            <p id="responseBody"></p>
+        </div>
+        <script src="./script.js"></script>
+    </body>
+</html>

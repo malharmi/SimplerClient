@@ -1,0 +1,26 @@
+{
+  "name": "simplerclient",
+  "version": "1.0.0",
+  "description": "A simple client for viewing GET/POST requests",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/malharmi/SimplerClient.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/malharmi/SimplerClient/issues"
+  },
+  "homepage": "https://github.com/malharmi/SimplerClient#readme",
+  "devDependencies": {
+    "electron": "^13.1.3"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
