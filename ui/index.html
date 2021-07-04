@@ -15,8 +15,8 @@
             <div class="whatToRequest">
                 <label for="requestType">Request Type (GET or POST): </label>
                 <select name="requestType" id="requestType">
-                    <option value="post">POST</option>
-                    <option value="get">GET</option>
+                    <option value="POST">POST</option>
+                    <option value="GET">GET</option>
                 </select>
             </div>
             <div class="whatsMyType">
@@ -29,11 +29,16 @@
             </div>
             <div class="whatToSend">
                 <label for="body">Body: </label>
-                <input type="text" name="body" id="body" />
+                <textarea
+                    name="postBody"
+                    id="postBody"
+                    cols="30"
+                    rows="10"
+                ></textarea>
             </div>
             <div class="submitBtn">
                 <input
-                    onclick="submission(), handleRequest()"
+                    onclick="submission()"
                     type="button"
                     value="subBtn"
                     id="subBtn"
@@ -43,6 +48,6 @@
         <div class="MyResponse">
             <p id="responseBody"></p>
         </div>
-        <script src="./script.js"></script>
+        <script src="./scripts/script.js"></script>
     </body>
 </html>
